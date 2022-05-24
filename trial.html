@@ -7,17 +7,21 @@
     <link href="https://fonts.google.com/specimen/Rubik" rel="stylesheet">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300;1,400&display=swap');
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: [Rubik];
+            
+        }
+        body{
+            font-family: 'Rubik' ,  sans-serif;
         }
     .container{
         
         display: grid;
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 700vh;
         grid-gap:20px;
         background-color:hsl(226, 43%, 10%) ;
         justify-content: center;
@@ -241,6 +245,107 @@
         border: 2px solid hsl(235, 46%, 20%);
         background-color:hsl(235, 46%, 20%);}
         
+   
+
+
+@media screen and (max-width:450px) {
+    
+    
+        .container{
+        
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-gap:20px;
+        background-color:hsl(226, 43%, 10%) ;
+        justify-content: center;
+        align-items: center;
+        
+
+        }
+    
+    .content{
+        width: 100%;
+        height: auto;
+        display: grid; 
+        grid-template-columns: repeat(1,2fr);
+        grid-template-rows: repeat(7,300px);
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven";
+        row-gap: 30px;
+    } 
+    .profile{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        background-color:hsl(236, 85%, 61%);
+        
+    }  
+    li{
+    display: flex;
+    list-style-type: none;
+    margin:5px;
+    padding: 0;
+    color:hsl(195, 74%, 62%) ;
+}    
+     h6{
+        font-size: 10px;
+        color:white;
+        margin-top: 150px;
+        margin-left: 10px;
+
+         /*
+        float: left;
+        font-size: 10px;
+        color:white;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 30px;*/
+        
+
+
+    }
+    .power{
+       
+       margin-top: 90px;
+       border-radius: 10px;
+       border: 2px solid hsl(235, 46%, 20%);
+       background-color:hsl(235, 46%, 20%);}
+       
+    
+       .item2{
+        border:2px solid hsl(235, 46%, 20%);
+        background-color:hsl(15, 100%, 70%);
+        grid-area: two;
+        border-radius: 15px;
+        margin: 0;
+        
+        
+    }
+    h1{
+        float: left;
+        font-size:16px;
+        color: white;
+        
+    }
+    
+}
+
+
+        
+
+
+    
         
     </style>
 </head>
